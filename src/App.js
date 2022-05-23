@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './App.scss';
+import Menu from './Menu';
 
 function App() {
+  const [visible, setVisible] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu
+      // position='right'
+      >
+        <div>aaaa</div>
+        <div>bbbb</div>
+        <div>cccc</div>
+      </Menu>
+      <div>ahoo</div>
     </div>
   );
 }

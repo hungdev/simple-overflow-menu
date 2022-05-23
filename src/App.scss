@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.fn-menu {
+  display: flex;
+  position: relative;
+  overflow: visible;
+  outline: 0;
+
+  // position
+  .left {
+    left: 0px;
+  }
+
+  .right {
+    right: 0px;
+  }
+
+  .menu-toggle {
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .active-box {
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.161);
+  }
+
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    transition-delay: 0.2s;
+    // left: 0px;
+    right: 0px;
+    z-index: 400;
+    text-align: start;
+    display: none;
+    background: #fff;
+    width: 285px;
+    // border: 1px solid gray;
+    padding: 20px;
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.161);
+  }
+
+  .menu-open {
+    display: block;
+  }
+}
